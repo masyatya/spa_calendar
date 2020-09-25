@@ -1,0 +1,20 @@
+.about {
+  margin-bottom: 50px;
+  padding: 3vh 15vw 0;
+  color: #3D3D3D; }
+  .about__heading {
+    font-size: 28px;
+    margin-bottom: 50px; }
+  .about__paragraph {
+    text-align: justify;
+    margin: 16px 0;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 300; }
+  @media (max-width: 699px) {
+    .about {
+      padding-top: 30px; }
+      .about__heading {
+        margin-bottom: 25px; } }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,5 @@
+@media (min-width: 1920px) {
+  .container {
+    padding: 0 calc(50% - 1920px / 2); } }
+
+/*# sourceMappingURL=container.css.map */

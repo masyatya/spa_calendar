@@ -1,0 +1,154 @@
+.calendar {
+  width: 695px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  line-height: 23px;
+  font-size: 16px;
+  background:#272829;
+  color: #dfdfdf;
+
+  &__container {
+    width: 330px;
+  }
+
+  &__header {
+    margin: 100px 0 15px;
+    display: flex;
+    justify-content: space-between;;
+  }
+
+  &__arrow {
+    margin: 0 -5px;
+  }
+
+  &__arrow &__link-arrow::after {
+    visibility: hidden;
+  }
+
+  &__month-year {
+    font-size: 18px;
+    display: flex;
+    cursor: context-menu;
+  }
+
+  &__month {
+    margin-right: 5px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    width: 350px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__day {
+    position: relative;
+  }
+
+  &__day--current {
+    & .calendar__link {
+      color: #3d3d3d;
+      background-color: #fdd000;
+      transition: 0.1s;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__weekdays {
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: context-menu;
+  }
+
+  &__hr {
+    margin: 15px 0;
+    width: 100%;
+    border: 1px solid #ffffff;
+    opacity: 0.4;
+
+    &--up {
+      margin-bottom: 25px;
+    }
+
+    &--down {
+      margin-top: 25px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    width: 20px;
+    padding: 12px;
+    color: #dfdfdf;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    &-arrow {
+      font-weight: 300;
+      font-size: 30px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &--empty {
+      opacity: 0.4;
+    }
+
+    &:hover {
+      color: #fdd000;
+      cursor: pointer;
+
+      &::after {
+        display: block;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      transform:translate(-50%,-50%);
+      content: '';
+      display: none;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #fdd000;
+    }
+  }
+
+  @media (max-width: 1099px) {
+    width: 100%;
+
+    &__header {
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    &__container {
+      width: 280px;
+      margin-left: 0;
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      width: 300px;
+    }
+
+    &__link {
+      padding: 10px;
+    }
+  }
+}

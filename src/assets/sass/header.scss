@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #ffffff;
+
+  &__logo {
+    margin-left: 90px;
+    position: absolute;
+    top: 30px;
+    height: 40px;
+  }
+
+  @media (max-width: 699px) {
+    flex-direction: column;
+    height: 140px;
+
+    &__logo {
+      margin: 0;
+      position: relative;
+    }
+  }
+}

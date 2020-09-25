@@ -1,0 +1,1 @@
+{"version":3,"file":"container.css","sources":["container.scss"],"sourcesContent":[".container {\n\n  @media (min-width: 1920px) {\n    padding: 0 calc(50% - 1920px / 2);\n  }\n  \n}"],"names":[],"mappings":"AAEE,MAAM,EAAE,SAAS,EAAE,MAAM;EAF3B,AAAA,UAAU,CAAC;IAGP,OAAO,EAAE,CAAC,CAAC,sBAAsB,GAGpC"}

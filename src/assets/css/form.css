@@ -1,0 +1,44 @@
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 2;
+  background-color: #fbfbfb;
+  padding: 19px 17px 17px;
+  display: flex;
+  justify-content: space-between; }
+  .popup__input {
+    padding: 0 14px;
+    width: 136px;
+    color: #3D3D3D;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    height: 36px;
+    border: 1px solid #FDD000;
+    background-color: #fbfbfb; }
+  .popup__month-container {
+    margin-right: 16px; }
+  .popup__month, .popup__day {
+    color: #A2A2A2;
+    margin: 0 0 5px 2px;
+    font-size: 14px;
+    font-weight: 500; }
+  .popup__button {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #FDD000;
+    transition: 0.1s; }
+    .popup__button:hover {
+      cursor: pointer;
+      background-color: #3d3d3d;
+      color: #ffffff; }
+
+/*# sourceMappingURL=form.css.map */

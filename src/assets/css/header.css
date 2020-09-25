@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #ffffff; }
+  .header__logo {
+    margin-left: 90px;
+    position: absolute;
+    top: 30px;
+    height: 40px; }
+  @media (max-width: 699px) {
+    .header {
+      flex-direction: column;
+      height: 140px; }
+      .header__logo {
+        margin: 0;
+        position: relative; } }
+
+/*# sourceMappingURL=header.css.map */
